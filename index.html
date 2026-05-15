@@ -718,7 +718,7 @@
     ];
 
     let selectedPlayerCount = 2;
-    let playerNames = ['Pemain 1', 'Pemain 2', 'Pemain 3', 'Pemain 4'];
+    let playerNames = ['', '', '', ''];
     let playerCharacters = [null, null, null, null];
     let currentCharacterPlayer = 0;
     let players = [];
@@ -754,7 +754,7 @@
         field.className = 'name-input';
         field.innerHTML = `
           <label for="playerInput${index}">Pemain ${index + 1}</label>
-          <input id="playerInput${index}" type="text" value="${playerNames[index]}" placeholder="Nama Pemain ${index + 1}" />
+          <input id="playerInput${index}" type="text" value="" placeholder="Nama Pemain ${index + 1}" />
         `;
         field.querySelector('input').addEventListener('input', event => {
           playerNames[index] = event.target.value;
