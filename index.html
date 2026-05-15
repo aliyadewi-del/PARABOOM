@@ -911,7 +911,7 @@
     function createBoard() {
       const grid = document.getElementById('boardGrid');
       grid.innerHTML = '';
-      boardData.slice().reverse().forEach(cell => {
+      boardData.forEach(cell => {
         const node = document.createElement('div');
         node.className = 'cell';
         if (cell.type) node.classList.add('special');
